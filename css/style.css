@@ -9,6 +9,9 @@
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
 }*/
+.img-fluid{
+  display:block;
+}
 body{
   position:relative;
   margin-top: 5rem;
@@ -225,9 +228,7 @@ a:hover{
 .btn-submit{
   background-color: rgba(229, 90, 84, 1); 
 }
-@media screen and (max-width:768px){
-  
-}
+
 
 
 
