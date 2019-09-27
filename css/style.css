@@ -36,6 +36,11 @@ section{
 a:hover{
   text-decoration: none;
 }
+.section-heading h2 strong{
+  font-weight:800;
+
+}
+
 /* ======= custom navbar styles======= */
 .navbar{
   /*padding-left: 4rem;
@@ -81,7 +86,18 @@ a:hover{
 .custom-toggler.navbar-toggler:hover {
   border-color: pink;
 }
-
+@media screen and (max-width:992px){
+   .navbar-light .navbar-nav .nav-link  {
+    padding-top:0.5rem;
+    padding-bottom: 0.1rem;
+  }
+}
+@media screen and (min-width:992px){
+   .navbar-light .navbar-nav .nav-link  {
+    padding-left:3rem;
+    padding-right: 3rem;
+  }
+}
 /* ===== About ======= */
 #home{
   position: relative;
@@ -92,6 +108,7 @@ a:hover{
   background-position: 0 -470px;
   
 }
+
 @media screen and (max-width: 1200px){
   #home{
     background-position: 0 -400px;
