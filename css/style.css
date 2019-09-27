@@ -127,6 +127,7 @@ a:hover{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 -470px;
+  overflow-x: hidden;
   
 }
 
