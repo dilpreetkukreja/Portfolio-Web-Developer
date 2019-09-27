@@ -19,15 +19,17 @@ section{
   margin-top: -5rem;
   border:1px solid black;
   z-index:1;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10rem;
+
 }
-.border-heading{
+.heading-border-bottom{
   position: absolute;
   bottom:-40%;
   border-bottom:2px solid rgba(229, 90, 84, 1);
   width:8rem;
 }
-.fa{
+.fa, .fab, .fas{
   color:inherit;
 }
 #home-content a:hover, .fa:hover{
@@ -37,10 +39,24 @@ a:hover{
   text-decoration: none;
 }
 .section-heading h2 strong{
-  font-weight:800;
+  font-weight:900;
+  color:rgba(229, 90, 84, 1);
 
 }
+.section-heading{
+  text-align: center;
+  margin-bottom: 5rem;
+  position:relative;
 
+}
+.section-title{
+  position: relative;
+  display: inline-block;
+}
+.section-heading .heading-border-bottom{
+  left:0;
+  bottom:-60%;
+}
 /* ======= custom navbar styles======= */
 .navbar{
   /*padding-left: 4rem;
@@ -98,7 +114,7 @@ a:hover{
     padding-right: 3rem;
   }
 }
-/* ===== About ======= */
+/* ===== About section ======= */
 #home{
   position: relative;
   height:100vh;
@@ -151,7 +167,7 @@ a:hover{
   #home-name.display-3{
     font-size:3rem;
   }
-  .border-heading{
+  .heading-border-bottom{
     width:4rem;    
   }
 #home-content a{
@@ -192,6 +208,23 @@ a:hover{
     font-size:0.8rem;
   }
 }
+/*========== About me section ==============*/
+.hire-me, .download-cv{
+  color:#ffffff;
+}
+.hire-me{
+  background-color: rgba(229, 90, 84, 1); 
+  margin-right: 0.5rem;
+}
+/*========= Contact me section ==========*/
+.get-in-touch h1,.get-in-touch h4,.contact-form h4, .item-value, .grid-item i{
+  color: rgba(229, 90, 84, 1); 
+}
+.btn-submit{
+  background-color: rgba(229, 90, 84, 1); 
+}
+
+
 
 
 
