@@ -45,6 +45,7 @@ a:hover{
 .section-heading h2 strong{
   font-weight:900;
   color:rgba(229, 90, 84, 1);
+  text-shadow: 1px 0 rgba(229, 90, 84, 1);  
 
 }
 .section-heading{
@@ -54,8 +55,10 @@ a:hover{
 
 }
 .section-title{
+  font-size:3rem;
   position: relative;
   display: inline-block;
+  font-weight:200;
 }
 .section-heading .heading-border-bottom{
   left:0;
@@ -229,6 +232,49 @@ a:hover{
 .btn-submit{
   background-color: rgba(229, 90, 84, 1); 
 }
+/* ==== skills ======= */
+.html-section{
+ 
+
+}
+.progress{
+  overflow: visible;
+    margin-bottom: 26px;
+    height: 4px;
+ 
+}
+.progress-bar{
+  background-color: rgba(229, 90, 84, 1);
+  position: relative;
+  border-radius: 4px;
+
+}
+.progress .progress-bar span {
+    background-color: rgba(229, 90, 84, 1);
+    position: absolute;
+    bottom: -20px;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 2px 3px 2px 4px;
+    right: -1.4em;
+    border-radius: 2px;
+}
+.progress .progress-bar span::after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(229, 90, 84, 1);
+    border-width: 5px;
+    margin-left: -5px;
+}
+
+
 
 
 
