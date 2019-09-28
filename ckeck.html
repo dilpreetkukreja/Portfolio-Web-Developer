@@ -9,17 +9,88 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        background-color: transparent;
+        color:pink;
+      }
+      /*.card-deck {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap; 
+        align-items: stretch;
+      }
+      .card-deck .card {
+        display: block;
+        flex-basis: 33.3%; 
+        change this value for each breakpoint
+      }*/
+      .card-deck {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(33.33333%, 1fr));
+          grid-row-gap: 30px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <img class="img-fluid" src="images/about.jpg"></div>
-        </div>
-        <div class="col-lg-7">
-        </div>
-      </div>
-    </div>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-html-css" data-toggle="pill" href="#projects-html-css" role="tab" aria-controls="pills-html-css" aria-selected="true">HTML/CSS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-boostrap" data-toggle="pill" href="#projects-bootstrap" role="tab" aria-controls="pills-boostrap" aria-selected="false">BOOTSTRAP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-javascript" data-toggle="pill" href="#projects-javascript" role="tab" aria-controls="pills-javascript" aria-selected="false">JAVASCRIPT</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="projects-html-css" role="tabpanel" aria-labelledby="projects-html-css">
+          <div class="card-deck">
+            <div class="card">
+              <img src="images/Photographer_Portfolio.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div><!-- /card-->
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div><!-- /card-->
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div><!-- /card-->
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a </p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div><!-- /card-->
+
+          </div><!-- card-deck --->
+        </div><!--- /Tab Content html-css --->
+        <div class="tab-pane fade" id="projects-bootstrap" role="tabpanel" aria-labelledby="projects-bootstrap">There
+        </div><!--- /Tab Content Bootstrap--->
+        <div class="tab-pane fade" id="projects-javascript" role="tabpanel" aria-labelledby="projects-javascript">dilpreet
+        </div><!--- /Tab Content Javascript--->
+    </div><!-- /container --->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
