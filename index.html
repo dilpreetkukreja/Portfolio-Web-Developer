@@ -9,59 +9,65 @@
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- google Font --->
-   <!-- <link href="http://fonts.googleapis.com/css?family=Merriweather+Sans|Oxygen&display=swap" rel="stylesheet">-->
-   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Merriweather+Sans|Oxygen&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     <!--- Font Awesome ----->
     
-   <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
 
-   <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
     <!--- custom style sheet ----->
     <link rel="stylesheet" type="text/css" href="css/style.css">
- 
+    <title>Portfolio</title>
   </head>
-  <body data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
-    <!--  Home Section ---->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-color" id="navbarResponsive">
-            <a class="navbar-brand" href="#home">
-              <div>DK </div>
-            </a>
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto flex-fill justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                 <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#resume">Resume</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                 
-              </ul>
-            </div>
-        </nav><!-- navbar --->
+  <body data-spy="scroll" data-target="#navbarResponsive" data-offset="3">
+    <div id="topheader">
+    
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-color" id="navbarResponsive">
+        <div class="container">
+          <a class="navbar-brand" href="#home">
+            <div>DK </div>
+          </a>
+          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto flex-fill justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#home"><span>Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"><span>About</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skillsPresent"><span>Skills</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio"><span>Portfolio</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume"><span>Resume</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"><span>Contact</span></a>
+              </li>  
+            </ul>
+          </div><!-- /collapse menu--->
+        </div><!--/container -->
+      </nav><!-- /navbar --->
+    </div>
+
+    <!--  Home Section ---->
     <section id="home">
       <!--<img src="images/home.jpg" class="img-fluid" alt="home-image">-->
       <div class="container">
         <div id="home-content">
           <h1 id="home-name" class="display-3">
-            <div>Dilpreet kaur</div>
-            <div class="heading-border-bottom"></div>
+            Dilpreet kaur<br>
+            <span class="heading-border-bottom"></span>
           </h1>
           <p id="home-desc" class="lead">
             Front End Developer<br> 
@@ -77,8 +83,8 @@
     <section id="about">
       <div class="container">
         <div class="section-heading">
-              <h2 class="section-title">About <strong>Me</strong>
-                 <div class="heading-border-bottom"></div>
+              <h2 class="section-title">About <strong>Me</strong><br>
+                 <span class="heading-border-bottom"></span>
               </h2> 
         </div>
         <div class="row">
@@ -93,21 +99,22 @@
               <p>My passion for coding started during my college days. I find happiness when I see results of my coding. Untill recently I started learning web development which I find interesting. I explore online courses, read articles, watch videos and practice coding as I go. With my knowledge and understanding I was able to develop few websites and solve few coding challenges. </p>
               <p> My apprach to website development is to create a interactive website that strengthens company's brand while ensuring ease of use and simplicity for audience.</p>
               <p>I'm quietly confident, naturally curious and perpetually working on improving my skills.</p>
-              <a class="btn rounded-pill text-uppercase hire-me" href="#contact">Hire me</a><a class="btn btn-secondary text-uppercase rounded-pill download-cv" href="#">Download CV</a>
+              <a class="btn rounded-pill text-uppercase hire-me" href="#contact">Hire me</a>
+              <a class="btn btn-secondary text-uppercase rounded-pill download-cv" href="#">Download CV</a>
 
             </div>
           </div><!-- /column -->
         </div><!-- /row -->
        </div> <!-- /container --->
-      </section>
+      </section><!-- /about --->
 
-      <section id="skills">
+      <section id="skillsPresent">
         <div class="container">
           <div class="section-heading">
-                <h2 class="section-title">My <strong>Skills</strong>
-                   <div class="heading-border-bottom"></div>
+                <h2 class="section-title">My <strong>Skills</strong><br>
+                   <span class="heading-border-bottom"></span>
                 </h2> 
-          </div><!-- /section-heading --->
+          </div><!-- /section-heading -->
           <div class="skills-desc">
 
             <div class="skills">
@@ -115,7 +122,7 @@
                 <h3>HTML</h3>
                 <div class="progress" style="height: 5px;">
                   <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span>90%</span>
-                  </div><!--- /progrees-bar --->
+                  </div><!--- /progrees-bar -->
                 </div><!-- /progress --->
               </div><!-- /html-section-->
             </div><!-- /skills -->
@@ -155,100 +162,93 @@
       </section><!-- /section skills --->
   
       <section id="portfolio">
-        <div class="section-heading">
-                <h2 class="section-title">My <strong>Portfolio</strong>
-                   <div class="heading-border-bottom"></div>
-                </h2> 
-          </div><!-- /section-heading --->
         <div class="container">
-          <ul class="nav nav-pills mb-3 myNavTabs mb-5" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="pills-html-css" data-toggle="pill" href="#projects-html-css" role="tab" aria-controls="pills-html-css" aria-selected="true">HTML/CSS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-boostrap" data-toggle="pill" href="#projects-bootstrap" role="tab" aria-controls="pills-boostrap" aria-selected="false">BOOTSTRAP</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-javascript" data-toggle="pill" href="#projects-javascript" role="tab" aria-controls="pills-javascript" aria-selected="false">JAVASCRIPT</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="projects-html-css" role="tabpanel" aria-labelledby="projects-html-css">
-              <div class="card-deck">
-                <div class="card">
-                  <a href="https://dilpreetkukreja.github.io/photographer-portfolio-using-grid-layout/">
-                    <figure class="section-card moving-outline">
-                      <img src="images/Photographer_Portfolio.png" alt="">
-                      <figcaption class="caption"><p>Live Demo</p></figcaption>
-                    </figure>
-                  </a>
-                  <!--<a href="https://dilpreetkukreja.github.io/photographer-portfolio-using-grid-layout/"><img src="images/Photographer_Portfolio.png" class="card-img-top" alt="..."></a>-->
-                  <div class="card-body">
-                    <h5 class="card-title">Responsive Photographer Portfolio Template</h5>
-                    <p class="card-text">Skills used: HTML, CSS grid & flexbox layouts, CSS Absolute & Relative positioning and CSS transitions.</p>
-                  </div>
-                </div><!-- /card-->
-                <div class="card">
-                  <img src="images/Photographer_Portfolio.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div><!-- /card-->
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div><!-- /card-->
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a </p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div><!-- /card-->
+          <div class="section-heading">
+                  <h2 class="section-title">My <strong>Portfolio</strong><br>
+                     <span class="heading-border-bottom"></span>
+                  </h2> 
+          </div><!-- /section-heading --->
 
-              </div><!-- card-deck --->
-            </div><!--- /Tab Content html-css --->
-            <div class="tab-pane fade" id="projects-bootstrap" role="tabpanel" aria-labelledby="projects-bootstrap">There
-            </div><!--- /Tab Content Bootstrap--->
-            <div class="tab-pane fade" id="projects-javascript" role="tabpanel" aria-labelledby="projects-javascript">dilpreet
-            </div><!--- /Tab Content Javascript--->
+          <div class="portfolio-content">
+            <ul class="nav nav-pills mb-3 myNavTabs mb-5" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-html-css" data-toggle="pill" href="#projects-html-css" role="tab" aria-controls="pills-html-css" aria-selected="true"><span>HTML/CSS</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-boostrap" data-toggle="pill" href="#projects-bootstrap" role="tab" aria-controls="pills-boostrap" aria-selected="false"><span>BOOTSTRAP</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-javascript" data-toggle="pill" href="#projects-javascript" role="tab" aria-controls="pills-javascript" aria-selected="false"><span>JAVASCRIPT</span></a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="projects-html-css" role="tabpanel" aria-labelledby="projects-html-css">
+                <div class="card-deck">
+                  <div class="card">
+                    <a href="https://dilpreetkukreja.github.io/photographer-portfolio-using-grid-layout/">
+                      <figure class="section-card moving-outline">
+                        <img src="images/Photographer_Portfolio.png" alt="">
+                        <figcaption class="caption"><p>Live Demo</p></figcaption>
+                      </figure>
+                    </a>
+                    <!--<a href="https://dilpreetkukreja.github.io/photographer-portfolio-using-grid-layout/"><img src="images/Photographer_Portfolio.png" class="card-img-top" alt="..."></a>-->
+                    <div class="card-body">
+                      <h5 class="card-title">Responsive Photographer Portfolio Template</h5>
+                      <p class="card-text">Skills used: HTML, CSS grid & flexbox layouts, CSS Absolute & Relative positioning and CSS transitions.</p>
+                    </div>
+                  </div><!-- /card-->
+                  <div class="card">
+                    <a href="https://dilpreetkukreja.github.io/photographer-portfolio-using-grid-layout/">
+                      <figure class="section-card moving-outline">
+                        <img src="images/Photographer_Portfolio.png" alt="">
+                        <figcaption class="caption"><p>Live Demo</p></figcaption>
+                      </figure>
+                    </a>
+                    <!--<a href="https://dilpreetkukreja.github.io/photographer-portfolio-using-grid-layout/"><img src="images/Photographer_Portfolio.png" class="card-img-top" alt="..."></a>-->
+                    <div class="card-body">
+                      <h5 class="card-title">Responsive Photographer Portfolio Template</h5>
+                      <p class="card-text">Skills used: HTML, CSS grid & flexbox layouts, CSS Absolute & Relative positioning and CSS transitions.</p>
+                    </div>
+                  </div><!-- /card-->
+
+                  
+                 
+                </div><!-- card-deck --->
+
+              </div><!--tab pane html-css-->
+             
+              <div class="tab-pane fade" id="projects-bootstrap" role="tabpanel" aria-labelledby="projects-bootstrap">There
+              </div><!--- /Tab pane Bootstrap--->
+              <div class="tab-pane fade" id="projects-javascript" role="tabpanel" aria-labelledby="projects-javascript">dilpreet
+              </div><!--- /Tab pane Javascript--->
+            </div><!--- /Tab Content--->
+          </div><!--/portfolio-content -->
         </div><!-- /container --->
       </section><!-- section portfolio --->
 
       <section id="resume">
-        <div>
-          <p>This is resume</p>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-        </p>
-         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-        </p>
-         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-        </p>
-         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-        </p>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-        </p>
-      </div>
+        <div class="container">
+          <div class="section-heading">
+                <h2 class="section-title">My <strong>Resume</strong><br>
+                   <span class="heading-border-bottom"></span>
+                </h2> 
+          </div><!-- /section-heading --->
+          
+         
+        </div><!-- /container --->
       </section><!-- /section resume --->
 
       <section id="contact">
         <div class="container">
           <div class="section-heading">
-                <h2 class="section-title">Contact <strong>Me</strong>
-                   <div class="heading-border-bottom"></div>
+                <h2 class="section-title">Contact <strong>Me</strong><br>
+                   <span class="heading-border-bottom"></span>
                 </h2> 
           </div>
           <div class="row">
               <div class="col-md-6">
                 <div class="get-in-touch">
-                  <div>
                     <h1><strong>GET IN TOUCH</strong></h1>
                     <h4>Contact Details</h4>
                     <hr>
@@ -276,11 +276,10 @@
                         </div>  
                         <div class="grid-item">
                           <a href="#"><i class="mr-3 fab fa-github-square"></i></a>Github
-                          <div class="item-value">xxxx@github.com</div></div>
+                          <div class="item-value">xxxx@github.com</div>
+                        </div>
                       </div>
-                    </div>
-                                      
-                  </div><!--details-->
+                    </div><!-- /row --->
                 </div><!--get in touch --->
               </div><!---col div---->
               <div class="col-md-6">
@@ -308,13 +307,24 @@
              </div><!---row div---->
           </div><!--container div ----->
       </section><!-- /section contact --->
-    </div>
+
+      <footer>
+      </footer>
+ 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+        /*$( '#navbarSupportedContent .nav-link' ).on( 'click', function () {
+          console.log($( '#navbarSupportedContent' ).find('#navbarSupportedContent .nav-link.active')); 
+        $( '#navbarSupportedContent' ).find( '#navbarSupportedContent .nav-link.active' ).removeClass( 'active' );
+
+        $( this ).addClass( 'active' );
+      });*/
+   </script>
 
 
   </body>

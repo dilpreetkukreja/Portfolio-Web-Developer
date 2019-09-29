@@ -9,21 +9,18 @@
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
 }*/
-.img-fluid{
-  display:block;
-}
 body{
   position:relative;
   margin-top: 5rem;
-  overflow-x: hidden;
+
 }
 .navbar .nav-link, .navbar .navbar-brand {
   font-family: 'Montserrat', sans-serif;
 }
 section{
+  /*border:1px solid black;*/
   padding-top: 5rem;
   margin-top: -5rem;
-  /*border:1px solid black;*/
   z-index:1;
   font-family: 'Montserrat', sans-serif;
   padding-top: 10rem;
@@ -94,7 +91,7 @@ a:hover{
   padding-top:20px;
   padding-bottom: 20px;
 }
-.custom-toggler.navbar-toggler :focus{
+.custom-toggler.navbar-toggler:focus{
    color: #ffffff;
    text-shadow: 2px 1px 1px black;
 }
@@ -108,7 +105,18 @@ button:focus {
   
 }
 .navbar-light .navbar-nav .nav-link.active{
-  color: rgb(253,159,0);
+  color: #ffd200;
+}
+.navbar-light .navbar-nav .nav-link span{
+  position:relative;
+}
+.navbar-light .navbar-nav .nav-link.active span::before{
+  position:absolute;
+  top:-0.9rem;
+  content:"";
+  display:block;
+  border:2px solid rgb(255,210,0);
+  width:100%; 
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(253,159,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -244,12 +252,12 @@ button:focus {
   background-color: rgba(229, 90, 84, 1); 
 }
 /* ==== skills ======= */
-.html-section{
- 
-
+.skills-desc{
+  margin-bottom: 2rem;
 }
+
 .progress{
-  overflow: visible;
+    overflow: visible;
     margin-bottom: 26px;
     height: 4px;
  
@@ -284,6 +292,7 @@ button:focus {
     border-width: 5px;
     margin-left: -5px;
 }
+/*--- Portfolio ---*/
 .nav-pills .nav-link{
   color: rgb(253,159,0);
   font-weight:900;
@@ -295,8 +304,22 @@ button:focus {
   font-weight:900;
 }
 .nav-pills .nav-link:hover {
-  border-top: 2px solid red;
+  /*border-top: 2px solid red;*/
   border-radius: 0;
+}
+.myNavTabs span{
+  position:relative;
+}
+.myNavTabs a.active{
+  text-shadow: 0.5px 0 rgba(229, 90, 84, 1); 
+}
+.myNavTabs a.active span::before{
+  position:absolute;
+  top:-0.5rem;
+  content:"";
+  display:block;
+  border:2px solid rgb(239,1,0);
+  width:100%; 
 }
 
 /*.card-deck {
@@ -325,113 +348,114 @@ box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
 border:none;
 }
 /*----appling css effects-----*/
-    figure{
-      margin:0;
-    }
-    .section-card{
-      position:relative;
-      cursor:pointer;
-    }
-    .section-card img{
-      width:100%;
-      height:100%;
-      object-fit: cover;
-    }
-    /*.scaling-on-offset{
-      animation-name: scaling;
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
-    }
-    @keyframes scaling{
-      0%{
-        transform: scale(0);
-      }
-      100%{
-        transform: scale(1);
-      }
+figure{
+  margin:0;
+}
+.section-card{
+  position:relative;
+  cursor:pointer;
+}
+.section-card img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+/*.scaling-on-offset{
+  animation-name: scaling;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes scaling{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
 
-    }*/
-    /*.section:hover .outline{
-      outline: 1px solid black;
-      outline-offset: -2rem;
+}*/
+/*.section:hover .outline{
+  outline: 1px solid black;
+  outline-offset: -2rem;
 
-    }*/
-    .section-card:hover .caption{
-      display:flex;
+}*/
+.section-card:hover .caption{
+  display:flex;
 
-    } 
-    .section-card:hover img{
-      opacity:0.7;
+} 
+.section-card:hover img{
+  opacity:0.7;
 
-    }
-    .caption{
-      position: absolute;
-      top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);
-      height:30px;
-      width:30%;
-      color:#ffffff;
-      font-weight:900;
-      /*background-color: rgba(0,0,0,0.3);*/
-     /*display: flex;
-      justify-content: center;
-      align-items: center;*/
-      display:none;
-      -webkit-transition: display ease-out 250ms; 
-      transition: display ease-out 250ms; 
-    }
-    .caption p{
-      text-align: center;
-      padding:0.5rem;
-    }
+}
+.caption{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height:30px;
+  width:30%;
+  color:#ffffff;
+  font-weight:900;
+  /*background-color: rgba(0,0,0,0.3);*/
+ /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  display:none;
+  -webkit-transition: display ease-out 250ms; 
+  transition: display ease-out 250ms; 
+}
+.caption p{
+  text-align: center;
+  padding:0.5rem;
+}
 
-    .section-card img{
-      opacity:1;
-      transition: opacity ease-out 250ms; 
-    }
-    /*.outline{
-      -webkit-transition: outline ease-out 250ms;
-      transition: outline ease-out 250ms;
-    }*/
-    .moving-outline::before{
-      position:absolute;
-      content:"";
-      top:1.25rem;
-      bottom:1.25rem;
-      left:1.25rem;
-      right:1.25rem;
-      
-    }
-    .moving-outline::before{
-      border-top: 2px solid rgb(253,159,0);;
-      border-bottom: 2px solid rgb(253,159,0);
-      transform: scale(0,1);
-      transition: transform ease-out 250ms;
-      z-index:1;
-    }
-    .moving-outline:hover::before{
-      transform: scale(1,1);
-    }
+.section-card img{
+  opacity:1;
+  transition: opacity ease-out 250ms; 
+}
+/*.outline{
+  -webkit-transition: outline ease-out 250ms;
+  transition: outline ease-out 250ms;
+}*/
+.moving-outline::before{
+  position:absolute;
+  content:"";
+  top:1.25rem;
+  bottom:1.25rem;
+  left:1.25rem;
+  right:1.25rem;
+  
+}
+.moving-outline::before{
+  border-top: 2px solid rgb(253,159,0);;
+  border-bottom: 2px solid rgb(253,159,0);
+  transform: scale(0,1);
+  transition: transform ease-out 250ms;
+  z-index:1;
+}
+.moving-outline:hover::before{
+  transform: scale(1,1);
+}
 
-    .moving-outline::after{
-      position:absolute;
-      content:"";
-      top:1.25rem;
-      bottom:1.25rem;
-      left:1.25rem;
-      right:1.25rem;
-      
-    }
-    .moving-outline::after{
-      border-left: 2px solid rgb(253,159,0);;
-      border-right: 2px solid rgb(253,159,0);;
-      transform: scale(1,0);
-      transition: transform ease-out 250ms;
-    }
-    .moving-outline:hover::after{
-      transform: scale(1,1);
-    }
+.moving-outline::after{
+  position:absolute;
+  content:"";
+  top:1.25rem;
+  bottom:1.25rem;
+  left:1.25rem;
+  right:1.25rem;
+  
+}
+.moving-outline::after{
+  border-left: 2px solid rgb(253,159,0);;
+  border-right: 2px solid rgb(253,159,0);;
+  transform: scale(1,0);
+  transition: transform ease-out 250ms;
+}
+.moving-outline:hover::after{
+  transform: scale(1,1);
+}
+/* ============= styling end ======*/
 
 
 
