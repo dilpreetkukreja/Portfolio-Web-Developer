@@ -14,10 +14,19 @@ a{
 }
 
 a span::before{
-  border-top: 1px solid rgb(253,159,0);
+  position:absolute;
+  content:"";
+  display:block;
+  top:-0.4rem;
   transform: scale(0,1);
   transition: transform ease-out 250ms;
   z-index:1;
+  width:100%;
+}
+@media screen and (max-width:786px){
+  a span::before{
+    top:-0.3rem;
+  }
 }
 a span:hover::before{
   transform: scale(1,1);
@@ -41,12 +50,6 @@ section{
   font-family: 'Montserrat', sans-serif;
   padding-top: 10rem;
 
-}
-.heading-border-bottom{
-  position: absolute;
-  bottom:-40%;
-  border-bottom:2px solid rgba(229, 90, 84, 1);
-  width:8rem;
 }
 .fa, .fab, .fas{
   color:inherit;
@@ -78,6 +81,10 @@ a:hover{
 .section-heading .heading-border-bottom{
   left:0;
   bottom:-60%;
+  position: absolute;
+  bottom:-40%;
+  border-bottom:4px solid rgba(229, 90, 84, 1);
+  width:8rem;
 }
 /* ======= custom navbar styles======= */
 .navbar{
@@ -128,13 +135,7 @@ button:focus {
   position:relative;
 }
 .navbar-light .navbar-nav .nav-link span::before{
-
-  position:absolute;
-  top:-0.4rem;
-  content:"";
-  display:block;
-  border:2px solid rgb(255,210,0);
-  width:100%; 
+  border-top:3px solid rgb(255,210,0);
 }
 /*.navbar-light .navbar-nav .nav-link.active span::before{
   transform: scale(1,1);
@@ -341,12 +342,7 @@ button:focus {
   text-shadow: 0.5px 0 rgba(229, 90, 84, 1); 
 }
 .myNavTabs a span::before{
-  position:absolute;
-  top:-0.5rem;
-  content:"";
-  display:block;
-  border:2px solid rgb(239,1,0);
-  width:100%; 
+  border:1px solid rgb(239,1,0);
 }
 /*.myNavTabs a.active span::before{
   transform:scale(1,1);
@@ -431,8 +427,6 @@ figure{
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  height:30px;
-  width:30%;
   color:#ffffff;
   font-weight:900;
   /*background-color: rgba(0,0,0,0.3);*/
@@ -442,10 +436,6 @@ figure{
   display:none;
   -webkit-transition: display ease-out 250ms; 
   transition: display ease-out 250ms; 
-}
-.caption p{
-  text-align: center;
-  padding:0.5rem;
 }
 
 .section-card img{
