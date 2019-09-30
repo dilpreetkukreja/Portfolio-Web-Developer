@@ -9,6 +9,22 @@
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
 }*/
+a{
+  position: relative;
+}
+
+a span::before{
+  border-top: 1px solid rgb(253,159,0);
+  transform: scale(0,1);
+  transition: transform ease-out 250ms;
+  z-index:1;
+}
+a span:hover::before{
+  transform: scale(1,1);
+}
+a.active span::before{
+  transform: scale(1,1);
+}
 body{
   position:relative;
   margin-top: 5rem;
@@ -44,7 +60,7 @@ a:hover{
 .section-heading h2 strong{
   font-weight:900;
   color:rgba(229, 90, 84, 1);
-  text-shadow: 1px 0 rgba(229, 90, 84, 1);  
+  text-shadow: 2px 0 rgba(229, 90, 84, 1);  
 
 }
 .section-heading{
@@ -106,18 +122,29 @@ button:focus {
 }
 .navbar-light .navbar-nav .nav-link.active{
   color: #ffd200;
+
 }
 .navbar-light .navbar-nav .nav-link span{
   position:relative;
 }
-.navbar-light .navbar-nav .nav-link.active span::before{
+.navbar-light .navbar-nav .nav-link span::before{
+
   position:absolute;
-  top:-0.9rem;
+  top:-0.4rem;
   content:"";
   display:block;
   border:2px solid rgb(255,210,0);
   width:100%; 
 }
+/*.navbar-light .navbar-nav .nav-link.active span::before{
+  transform: scale(1,1);
+  position:absolute;
+  top:-0.4rem;
+  content:"";
+  display:block;
+  border:2px solid rgb(255,210,0);
+  width:100%; 
+}*/
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(253,159,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
  /*using red color for toggler icon using stroke='red'*/
@@ -313,7 +340,7 @@ button:focus {
 .myNavTabs a.active{
   text-shadow: 0.5px 0 rgba(229, 90, 84, 1); 
 }
-.myNavTabs a.active span::before{
+.myNavTabs a span::before{
   position:absolute;
   top:-0.5rem;
   content:"";
@@ -321,6 +348,18 @@ button:focus {
   border:2px solid rgb(239,1,0);
   width:100%; 
 }
+/*.myNavTabs a.active span::before{
+  transform:scale(1,1);
+  }*/
+
+/*.myNavTabs a.active span::before{
+  position:absolute;
+  top:-0.5rem;
+  content:"";
+  display:block;
+  border:2px solid rgb(239,1,0);
+  width:100%; 
+}*/
 
 /*.card-deck {
   display: flex;
