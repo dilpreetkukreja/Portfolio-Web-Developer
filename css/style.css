@@ -86,6 +86,7 @@ a:hover{
   border-bottom:4px solid rgba(229, 90, 84, 1);
   width:8rem;
 }
+
 /* ======= custom navbar styles======= */
 .navbar{
   /*padding-left: 4rem;
@@ -101,9 +102,11 @@ a:hover{
 .navbar .navbar-brand div{
   color:rgb(255,210,0);
   font-size:2rem;
-  border:2px solid #ffffff;
+  border:2px solid rgb(255,210,0);
   padding-left: 1rem;
   padding-right: 1rem;
+  font-family: 'Dancing Script', cursive;
+  background-color: black;
 }
 .navbar .navbar-brand:hover{
   color: rgba(229, 90, 84,1);
@@ -151,7 +154,7 @@ button:focus {
  /*using red color for toggler icon using stroke='red'*/
 }
 .custom-toggler.navbar-toggler {
-  border-color: #ffffff;
+  border: 2px solid rgb(255,210,0);
 }
 .custom-toggler.navbar-toggler:hover {
   border-color: rgb(253,159,0);
