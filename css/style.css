@@ -31,9 +31,12 @@ a span::before{
 a span:hover::before{
   transform: scale(1,1);
 }
-a.active span::before{
+@media screen and (min-width: 768px){
+  a.active span::before{
   transform: scale(1,1);
 }
+}
+
 body{
   position:relative;
   margin-top: 5rem;
@@ -503,7 +506,7 @@ figure{
 /* ============= styling end ======*/
 @media screen and (max-width: 576px){
   .nav-pills .nav-link{
-   
+
   }
 }
 
