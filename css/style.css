@@ -184,6 +184,7 @@ button:focus {
   
 }
 
+
 @media screen and (max-width: 1200px){
   #home{
     background-position: 0 -400px;
@@ -265,6 +266,10 @@ button:focus {
   }
   #home-content a{
     font-size:0.8rem;
+  }
+}@media screen and (min-width: 992px){
+   #home{
+    background-attachment: fixed;
   }
 }
 /*========== About me section ==============*/
