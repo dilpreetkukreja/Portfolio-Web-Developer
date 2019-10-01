@@ -509,6 +509,28 @@ figure{
 
   }
 }
+/* ------ Footer ----- */
+#site-footer{
+  background-color: rgba(229, 90, 84, 1);
+  color:rgb(255,210,0);
+}
+
+.social-item{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(255,210,0);
+    position: relative;
+    border-radius: 50%;
+    font-size: 22px;
+    margin: 0 10px;
+    color:inherit;
+    
+}
+#site-footer .copyright a{
+  color:#ffffff;
+
+} 
 
 
 
