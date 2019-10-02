@@ -226,12 +226,16 @@ button:focus {
   z-index:3;
 }
 #home-name{
-  display: none;/* for animation purposes */
-}
-#home-desc{
   position:relative;
   display: none;/* for animation purposes */
   bottom:-250px;/* for animation purposes */
+  
+}
+#home-desc{
+  display: none;/* for animation purposes */
+}
+#view-port{
+  display: none;/* for animation purposes */
 }
 #home-name.display-3{
     font-size:3rem;
