@@ -14,4 +14,7 @@ $(function() {
     		scrollTop: $(this.hash).offset().top
     	}, 1000); //1 sec duration of scroll
     })
+    $('#home-name').fadeIn(2000);
+    //$('#home-desc').slideUp();
+    $('#home-desc').css({'display':'block'}).animate({bottom:'0'})
 });
