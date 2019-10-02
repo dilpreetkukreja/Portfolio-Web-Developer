@@ -542,7 +542,9 @@ figure{
 
 } 
 /* ========= Resume ==========*/
-
+.education h2, .experience h2{
+  color:rgb(253,159,0);
+}
 
 
 
