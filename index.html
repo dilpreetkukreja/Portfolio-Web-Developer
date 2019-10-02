@@ -100,8 +100,10 @@
               <p>My passion for coding started during my college days. I find happiness when I see results of my coding. Untill recently I started learning web development which I find interesting. I explore online courses, read articles, watch videos and practice coding as I go. With my knowledge and understanding I was able to develop few websites and solve few coding challenges. </p>
               <p> My apprach to website development is to create a interactive website that strengthens company's brand while ensuring ease of use and simplicity for audience.</p>
               <p>I'm quietly confident, naturally curious and perpetually working on improving my skills.</p>
-              <a class="btn rounded-pill text-uppercase hire-me" href="#contact">Hire me</a>
-              <a class="btn btn-secondary text-uppercase rounded-pill download-cv" href="#">Download CV</a>
+              <div class="buttons text-center mt-2">
+                <a class="btn rounded-pill text-uppercase hire-me" href="#contact">Hire me</a>
+                <a class="btn btn-secondary text-uppercase rounded-pill download-cv" href="#">Download CV</a>
+              </div>
 
             </div>
           </div><!-- /column -->
@@ -669,7 +671,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
           <div class="row">
               <div class="col-md-6">
                 <div class="get-in-touch">
-                    <h1><strong>GET IN TOUCH</strong></h1>
+                    
                     <h4>Contact Details</h4>
                     <hr>
                     <div class="row">
@@ -702,8 +704,8 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                     </div><!-- /row --->
                 </div><!--get in touch --->
               </div><!---col div---->
-              <div class="col-md-6">
-                <div class="contact-form mt-3">
+              <div class="drop-me-line col-md-6">
+                <div class="contact-form">
                   <h4>Drop me a line</h4>
                   <hr>
                     <form>
@@ -720,7 +722,9 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                           <label for="message">Message:</label>
                           <textarea class="form-control" rows="5" id="message"></textarea>
                         </div>
-                    <button type="submit" class="btn btn-submit rounded-pill">Send</button>
+                        <div class="text-center">
+                          <button type="submit" class="drop-me-line-btn btn rounded-pill">Send</button>
+                        </div>
                     </form>
                 </div><!--contact form --->
               </div><!---col div---->
@@ -756,14 +760,18 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   <script type="text/javascript" src="js/script.js">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js">
         /*$( '#navbarSupportedContent .nav-link' ).on( 'click', function () {
           console.log($( '#navbarSupportedContent' ).find('#navbarSupportedContent .nav-link.active')); 
         $( '#navbarSupportedContent' ).find( '#navbarSupportedContent .nav-link.active' ).removeClass( 'active' );
 
         $( this ).addClass( 'active' );
       });*/
-   </script>
+    </script>
 
 
   </body>

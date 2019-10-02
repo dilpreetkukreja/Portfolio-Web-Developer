@@ -81,13 +81,12 @@ a:hover{
   display: inline-block;
   font-weight:200;
 }
-.section-heading .heading-border-bottom{
+.heading-border-bottom{
   left:0;
-  bottom:-60%;
   position: absolute;
   bottom:-40%;
   border-bottom:4px solid rgba(229, 90, 84, 1);
-  width:8rem;
+  width:7rem;
 }
 
 /* ======= custom navbar styles======= */
@@ -224,15 +223,12 @@ button:focus {
   position: absolute;
   top:40%;
   color:#ffffff;
-  z-index:2;
+  z-index:3;
 }
 
-  #home-name.display-3{
+#home-name.display-3{
     font-size:3rem;
-  }
-  .heading-border-bottom{
-    width:4rem;    
-  }
+}
 #home-content a{
   color:inherit;
 }
@@ -287,10 +283,23 @@ button:focus {
 .get-in-touch h1,.get-in-touch h4,.contact-form h4, .item-value, .grid-item i{
   color: rgba(229, 90, 84, 1); 
 }
-.btn-submit{
+.drop-me-line-btn{
   background-color: rgba(229, 90, 84, 1); 
+  margin: 0 auto!important;
 }
-/* ==== skills ======= */
+@media screen and (max-width:576px){
+  .drop-me-line{
+    margin-top: 2rem;
+  }
+  .drop-me-line-btn{
+    display: block;
+    width:100%;
+    border-radius: 0!important;  
+  }
+
+}
+
+/* ==== skills ============================= */
 .skills-desc{
   margin-bottom: 2rem;
 }
@@ -331,6 +340,7 @@ button:focus {
     border-width: 5px;
     margin-left: -5px;
 }
+
 /*--- Portfolio ---*/
 .nav-pills .nav-link{
   color: rgb(253,159,0);
