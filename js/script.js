@@ -12,6 +12,6 @@ $(function() {
     	$('body, html').animate({	
     		//set scrollbar position from top = section distance from top
     		scrollTop: $(this.hash).offset().top
-    	}, 500); //1 sec duration of scroll
+    	}, 1000); //1 sec duration of scroll
     })
 });
