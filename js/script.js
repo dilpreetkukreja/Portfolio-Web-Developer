@@ -26,8 +26,16 @@ $(function() {
 	        + '&body=' + encodeURIComponent($('#message').val());
 	    $('#mail-link').attr('href',  'mailto:dilpreet.kukreja@gmail.com' + mailString);
 	}
+
 	$( "#subject" ).focusout(function() { updateMailString(); });
 	$( "#message" ).focusout(function() { updateMailString(); });
-	updateMailString();
+	
+
+	$('#mail-link').click(function(){
+		$( "#subject" ).val("");
+		$( "#message" ).val("");
+		//$('#send-email').reset();
+	})
+
 });
 
