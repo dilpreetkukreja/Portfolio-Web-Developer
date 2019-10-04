@@ -292,7 +292,10 @@ button:focus {
 }
 /*========= Contact me section ==========*/
 .get-in-touch h1,.get-in-touch h4,.contact-form h4, .item-value, .grid-item i{
-  color: rgb(253,159,0); 
+  color: rgb(253,159,0);
+}
+.contactLinks:hover{
+  color: rgb(255,210,0);
 }
 .drop-me-line-btn{
   background-color: rgb(253,159,0); 
@@ -552,6 +555,18 @@ figure{
   color:#ffffff;
 
 } 
+.footer-name{
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 3px 3px 3px black;
+}
+@media screen and (max-width: 576px){
+  .social-item{
+    width: 45px;
+    height: 45px;
+  }
+}
 /* ========= Resume ==========*/
 .education h2, .education I, .experience h2, .experience I{
   color:rgb(253,159,0);
