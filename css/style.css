@@ -551,6 +551,9 @@ figure{
     color:inherit;
     
 }
+.social-item:hover{
+  color:#ffffff;
+}
 #site-footer .copyright a{
   color:#ffffff;
 
