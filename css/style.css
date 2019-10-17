@@ -354,6 +354,9 @@ button:focus {
     border-width: 5px;
     margin-left: -5px;
 }
+.skills span{
+  font-size: 15px;
+}
 
 /*--- Portfolio ---*/
 .nav-pills .nav-link{
